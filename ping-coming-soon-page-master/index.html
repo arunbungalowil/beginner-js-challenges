@@ -5,20 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Ping coming soon page</title>
-
 </head>
+
 <body>
+  <!-- header section -->
+  <header>
+    <div class="hero-container">
+      <img src="images/logo.svg" alt="ping logo" class="logo">
+    </div>
+  </header>
+  <!-- main section -->
+  <main>
+    <div class="main-container">
+      <div class="heading-container">
+        <h1 class="heading">
+          <span class="launching">We are launching</span>
+          <span class="soon">soon!</span>
+        </h1>
+      </div>
+      <div class="paragraph-container"> 
+        <p class="paragraph">Subscribe and get notified</p>
+      </div>
 
-  We are launching soon!
+      <div class="signup">
+        <form action="#" method="#" id="signup-form" class="signup-form">
+          <input type="text" id="signup-email" class="signup-email" placeholder="Your email address...">
+          <button type ="submit" class="btn">Notify Me</button>
 
-  Subscribe and get notified
+          <div class="error-container">
+            <p class="error-noemail"></p>
+            <p class="error-invalid-email"></p>
+          </div>
+        </form>
+      </div>
 
-  Notify Me
+      <div class="main-illustration">
+        <img src="images/illustration-dashboard.png" alt= "illustration of dashboard" class="illustration">
+      </div>
 
-  &copy; Copyright Ping. All rights reserved.
-
+    </div>
+  </main>
+  <!-- footer -->
+  <footer>
+    <div class="footer-social-media">
+      <a href="#"><img src="images/icon-facebook.svg" alt="facebook icon"></a>
+      <a href="#"><img src="images/icon-twitter.svg" alt="twitter icon"></a>
+      <a href="#"><img src="images/icon-instagram.svg" alt="instagram icon"></a>
+    </div>
+    <div class="copy-right">
+      <p>&copy; Copyright Ping. All rights reserved.</p>
+    </div>
+  </footer>
+  <script></script>
  
 </body>
 </html>
