@@ -127,10 +127,11 @@ footer {
 .border-error{
     border:  solid 0.1px var(--clr-secondary-light-red);
  }
-.error-noemail{
+.error{
+    visibility: hidden;
     color: var(--clr-secondary-light-red);
 }
-.error-invalid-email{}
+/* .error-invalid-email{} */
 .footer-social-media {
     width: 100%;
     display: flex;
