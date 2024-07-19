@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Ping coming soon page</title>
@@ -21,10 +24,10 @@
   <main>
     <div class="main-container">
       <div class="heading-container">
-        <h1 class="heading">
+        <h2 class="heading">
           <span class="launching">We are launching</span>
           <span class="soon">soon!</span>
-        </h1>
+        </h2>
       </div>
       <div class="paragraph-container"> 
         <p class="paragraph">Subscribe and get notified</p>
@@ -32,13 +35,15 @@
 
       <div class="signup">
         <form action="#" method="#" id="signup-form" class="signup-form">
-          <input type="text" id="signup-email" class="signup-email" placeholder="Your email address...">
-          <button type ="submit" class="btn">Notify Me</button>
-
-          <div class="error-container">
-            <p class="error-noemail"></p>
-            <p class="error-invalid-email"></p>
+          <div class="grid">
+            <input type="text" id="signup-email" class="signup-email border-error" placeholder="Your email address...">
+            <button type ="submit" class="btn">Notify Me</button>
           </div>
+          <div class="error-container">
+            <p class="error-noemail">Whoops! It looks like you forgot to add your email</p>
+            <p class="error-invalid-email">Please provide a valid email address</p>
+          </div>
+          
         </form>
       </div>
 
@@ -51,15 +56,20 @@
   <!-- footer -->
   <footer>
     <div class="footer-social-media">
-      <a href="#"><img src="images/icon-facebook.svg" alt="facebook icon"></a>
-      <a href="#"><img src="images/icon-twitter.svg" alt="twitter icon"></a>
-      <a href="#"><img src="images/icon-instagram.svg" alt="instagram icon"></a>
+      <div class="circle">
+        <a href="#"><img src="images/icon-facebook.svg" alt="facebook icon" class="icon"></a></div>
+      <div class="circle">
+        <a href="#"><img src="images/icon-twitter.svg" alt="twitter icon" class="icon"></a>
+      </div>
+      <div class="circle"> 
+        <a href="#"><img src="images/icon-instagram.svg" alt="instagram icon" class="icon"></a>
+      </div>
     </div>
     <div class="copy-right">
       <p>&copy; Copyright Ping. All rights reserved.</p>
     </div>
   </footer>
-  <script></script>
+  <script src="script.js"></script>
  
 </body>
 </html>
