@@ -23,9 +23,11 @@ document.addEventListener('DOMContentLoaded', function(){
             hasError = true;
         }
 
-        if(hasError == false){
+        if (!hasError) {
             emailInput.classList.remove('error-state');
-            error.style.visibility = 'hidden'
+            error.style.visibility = 'hidden';
+            const redirectUrl = 'success.html?email=' + encodeURIComponent(emailValue);
+            window.location.href = redirectUrl;
         }
     });
 

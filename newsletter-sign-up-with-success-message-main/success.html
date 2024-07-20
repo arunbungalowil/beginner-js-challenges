@@ -5,21 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>success message</title>
+    <link rel="stylesheet" href="success.css">
 </head>
 <body>
-    <section>
-        <div class="success-icon">
-            <img src="assets/images/icon-success.svg" alt="success icon">
-        </div>
-        <div class="success">
-            <h1 class="success-heading"> Thanks for subscribing!</h1>
-            <p class="success-message"> A confirmation email has been sent to <b>ash@loremcompany</b>.com. 
-                Please open it and click the button inside to confirm your subscription.</p>
-        </div>
-    </section>
-    <footer>
-        <button>Dismiss message</button>
-    </footer>
+    <div class="success-container-div">
+        <section>
+            <div class="success-icon">
+                <img src="assets/images/icon-success.svg" alt="success icon">
+            </div>
+            <div class="success">
+                <h1 class="success-heading"> Thanks for subscribing!</h1>
+                <p class="success-message"> A confirmation email has been sent to <b id="email-address">[Email]</b>.com. 
+                    Please open it and click the button inside to confirm your subscription.</p>
+            </div>
+        </section>
+
+        <footer>
+            <button  class="btn" id="btn">Dismiss message</button>
+        </footer>
+    </div>
+   
+    <script>
+       
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Success page script loaded'); 
+
+            const params = new URLSearchParams(window.location.search);
+            const email = params.get('email');
+            const emailAddressElement = document.getElementById('email-address');
+           
+            console.log('Email parameter:', email);
+
+            if (email) {
+                emailAddressElement.textContent = email;
+            } else {
+                emailAddressElement.textContent = 'unknown';
+            }
+        });
+
+        // redirecting to the main page
+        const dismissButton = document.getElementById('btn')
+        dismissButton.addEventListener('click', function(){
+            window.location.href = 'index.html';
+        })
+    </script>
+
+    
 </body>
 </html>
 
