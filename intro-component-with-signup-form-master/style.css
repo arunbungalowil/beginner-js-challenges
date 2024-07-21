@@ -1,0 +1,30 @@
+:root{
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --clr-primary-red: hsl(0, 100%, 74%) ;
+    --clr-primary-green: hsl(154, 59%, 51%);
+    /* ### Accent */
+
+    --clr-blue: hsl(248, 32%, 49%);
+
+    /* ### Neutral */
+
+    --clr-neutral-dark-blue: hsl(249, 10%, 26%) ;
+    --clr-neutral-grayish-blue: hsl(246, 25%, 77%);
+
+    /* ## Typography */
+
+    /* ### Body Copy */
+
+    --fnt-size: 16px;
+
+    /* ### Font */
+
+    --clr-Family: "Poppins", sans-serif;
+    --fnt-weight-400: 400;
+    --fnt-weight-500: 500;
+    --fnt-weight-600: 600;
+    --fnt-weight-700: 700;
+}
