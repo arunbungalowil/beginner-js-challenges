@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Interactive rating component</title>
@@ -15,18 +18,20 @@
 
   <main>
     <img src="images/icon-star.svg" alt="star icon" class="rating-star">
-    <div class="rating-container">
+    <div class="rating-description">
       <h1 class="heading"> How did we do?</h1>
       <p class="paragraph">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
     </div>
 
    <form action="thankyou.html" method="get" id="rating-form" class="rating-form">
+    <div class="rating-container">
       <button class="btn" value="1">1</button>
       <button class="btn" value="2">2</button>
       <button class="btn" value="3">3</button>
       <button class="btn" value="4">4</button>
       <button class="btn" value="5">5</button>
-      <div class="submit-button">
+    </div>
+      <div class="submit-button-container">
         <button type="submit" class="submit-button">Submit</button>
       </div>   
   </form>

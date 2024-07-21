@@ -1,0 +1,82 @@
+:root{
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --clr-primary-orange: hsl(25, 97%, 53%);
+
+    /* ### Neutral */
+
+    --clr-neutral-white: hsl(0, 0%, 100%);
+    --clr-neutral-light-grey: hsl(217, 12%, 63%);
+    --clr-neutral-dark-blue: hsl(213, 19%, 18%);
+    --clr-neutral-very-dark-blue: hsl(216, 12%, 8%);
+
+    /* ## Typography */
+
+    /* ### Body Copy */
+
+    --fnt-size : 15px; /*(paragraph)*/
+
+    /* ### Font */
+
+    --fnt-family:"Overpass", sans-serif;
+    --fnt-weight-400: 400;
+    --fnt-weight-700:700;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: var(--fnt-family);
+    background-color: var(--clr-neutral-very-dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: 100%;
+    max-width: 450px;
+    background: linear-gradient(to bottom, hsl(212deg 11.76% 13.8%), hsl(215deg 23.38% 13.08%));
+    margin: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    border-radius: 1rem;
+}
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.rating-value{
+    background-color: var(--clr-neutral-dark-blue);
+    color: var(--clr-primary-orange);
+    border-radius: 1.5rem;
+    padding: 0.85rem;
+}
+.rating{}
+.thankyou-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--clr-neutral-white);
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+.thankyou-paragraph{
+    line-height: 1.5rem;
+    color: var(--clr-neutral-light-grey);
+    text-align: center;
+}
