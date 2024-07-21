@@ -101,6 +101,9 @@ label{
     clip: rect(0, 0, 0, 0);
     border: 0;
 }
+/* .error-field{
+    border: solid 1px hsl(0, 100%, 50%);
+}  */
 input,
 button{
     width: 100%;
@@ -115,15 +118,11 @@ input::placeholder{
 .input-container{
     position: relative;
 }
-.error-field{
-    border: solid 1px hsl(0, 100%, 50%);
-}
 .error-message{
     color: hsl(0, 100%, 50%);
     font-size: 0.775rem;
     margin-top: 0.5rem;
     text-align: right;
- 
 
 }
 .error-icon{
@@ -132,6 +131,11 @@ input::placeholder{
     top: 35%;
     transform: translateY(-50%);
 }
+.error-icon,
+.error-message{
+    visibility: hidden;
+}
+
 .btn{
     background-color: var(--clr-primary-green);
     color: hsl(0, 0%, 100%);

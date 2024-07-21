@@ -32,39 +32,39 @@
 
       <div class="form-container">
 
-        <form action="#" method="post" id="trial-form" class="trial-form">
+        <form action="#" method="get" id="trial-form" class="trial-form">
 
           <div class="input-container">
             <label for="first-name">First Name</label>
-            <input type="text" id="first-name" class="first-name form-field  error-field" placeholder="First Name" required>
-            <img src="images/icon-error.svg" alt="error-icon" class="error-icon">
-            <p class="error-message">first name cannot be empty</p>
+            <input type="text" id="first-name" class="first-name form-field  error-field" placeholder="First Name" >
+            <img src="images/icon-error.svg" alt="error-icon" class="error-icon" id="error-icon">
+            <p class="error-message" id="error-message"></p>
         </div>
 
         <div class="input-container">
           <label for="last-name">Last Name</label>
-          <input type="text" id="last-name" class="last-name form-field error-field" placeholder="Last Name" required>
-          <img src="images/icon-error.svg" alt="error-icon" class="error-icon">
-          <p class="error-message">last name cannot be empty</p>
+          <input type="text" id="last-name" class="last-name form-field error-field" placeholder="Last Name" >
+          <img src="images/icon-error.svg" alt="error-icon" class="error-icon" id="error-icon">
+          <p class="error-message" id="error-message">last name cannot be empty</p>
         </div>
 
         <div class="input-container">
           <label for="email-id">Email Address</label>
-          <input type="email" id="email-id" class="email-id form-field error-field" placeholder="Email Address" required>
-          <img src="images/icon-error.svg" alt="error-icon" class="error-icon">
-          <p class="error-message">email cannot be empty</p>
+          <input type="text" id="email-id" class="email-id form-field error-field" placeholder="Email Address" >
+          <img src="images/icon-error.svg" alt="error-icon" class="error-icon" id="error-icon">
+          <p class="error-message" id="error-message">email cannot be empty</p>
         </div>
 
         <div class="input-container">
           <label for="password">Password</label>
-          <input type="password" id="password" class="password form-field error-field" placeholder="Password" required minlength="8">
-          <img src="images/icon-error.svg" alt="error-icon" class="error-icon">
-          <p class="error-message">password cannot be empty</p>
+          <input type="password" id="password" class="password form-field error-field" placeholder="Password" >
+          <img src="images/icon-error.svg" alt="error-icon" class="error-icon" id="error-icon">
+          <p class="error-message" id="error-message">password cannot be empty</p>
         </div>
 
           <button type="submit" class="btn">Claim your free trial</button>
         </form>
-        
+
         <div class="terms">
           <p class="terms-conditions">By clicking the button, you are agreeing to our <span class="terms-service">
             <a href="#">Terms and Services</a>
@@ -73,6 +73,8 @@
       </div>
     </section>
   </main>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
