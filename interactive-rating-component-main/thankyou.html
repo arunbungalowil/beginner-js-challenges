@@ -15,7 +15,7 @@
     <main>
         <div class="hero-container">
             <img src="images/illustration-thank-you.svg" alt="thank you image" class="hero">
-            <p class="rating-value">You selected <span class="rating">4</span> out of 5</p>
+            <p class="rating-value">You selected <span class="rating" id="rating"></span> out of 5</p>
         </div>
         <div class="thankyou-container">
             <h1 class="thankyou-heading">Thank you!</h1>
@@ -24,6 +24,18 @@
         </div>
     </main>
   <!-- Thank you state end -->
-  
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+        // console.log('successfully loaded the thank you page');
+        let ratingValue = document.getElementById('rating');
+        const queryString = window.location.search;
+        // console.log(queryString);
+        const ratingParams = new URLSearchParams(queryString);
+        const rating = ratingParams.get('rating');
+        // console.log(rating)
+        ratingValue.innerText = rating
+    });
+  </script>
 </body>
 </html>

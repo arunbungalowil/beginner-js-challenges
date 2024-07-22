@@ -83,6 +83,9 @@ main{
     border: none;
     cursor: pointer;
 }
+.btn:hover{
+    background-color: var(--clr-primary-orange);
+}
 .submit-button-container{
     width: 100%;
     padding: 2rem 0;
@@ -94,4 +97,8 @@ main{
     background-color: var(--clr-primary-orange);
     text-transform: uppercase;
     letter-spacing: 3px;
+    cursor: pointer;
+}
+.submit-button:hover{
+    background-color: var(--clr-neutral-white);
 }
