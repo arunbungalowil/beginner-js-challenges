@@ -4,10 +4,9 @@ document.addEventListener('DOMContentLoaded', function(){
     let selectedRating = null;
 
     buttons.forEach(button => {
-        button.addEventListener('click', function(event){
+        button.addEventListener('click', function(){
             selectedRating = this.value;
             console.log(selectedRating)
-            // event.preventDefault();
         });  
     })
 
