@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Tip calculator app</title>
 </head>
@@ -12,66 +16,73 @@
 
   <header>
     <div class="heading-container">
-      <h2 class="heading-first-line">splt</h2>
-      <h2 class="heading-second-line">tter</h2>
+      <h1 class="heading-first-line">splt</h1>
+      <h1 class="heading-second-line">tter</h1>
     </div>
   </header>
 
   <main>
     <div class="tip-calculator-container">
-      <form action="#" method="#" class="tip-calculator-form">
-        <div class="form-input-field">
-          <label for="bill-amount">Bill</label>
+      <form action="#" method="get" class="tip-calculator-form">
+
+        <div class="form-input-field input-data">
+          <label for="bill-amount"class="tip-field-name">Bill</label>
           <span class="amount-in-dollar">
-            <img src="images/icon-dollar.svg" alt="dollor icon" class="dollor-icon">
+            <img src="images/icon-dollar.svg" alt="dollor icon" class="dollor-icon input-icon">
           </span>
-            <input type="text" id="bill-amount" class="bill-amount" name="bill-amount">
+            <input type="text" id="bill-amount" class="bill-input clear-all" name="bill-amount" placeholder="0.0">
         </div>
 
-        <div class="form-input-field">
-          <label for="bill-tip"> Select Tip %</label>
+        <div class="form-input-field select-tip">
+          <label for="bill-tip" class="tip-field-name"> Select Tip %</label>
           <div class="tip-percentage">
-            <button type="submit" value="5" class="btn">5%</button>
-            <button type="submit" value="5" class="btn">10%</button>
-            <button type="submit" value="5" class="btn">15%</button>
-            <button type="submit" value="5" class="btn">25%</button>
-            <button type="submit" value="5" class="btn">50%</button>
-            <input type="text" id="custom-tip" class="custom-tip" placeholder="Custom"></button>
+            <button type="button" value="5" id="bill-tip-1" class="btn bill-tip">5%</button>
+            <button type="button" value="10" id="bill-tip-2" class="btn bill-tip">10%</button>
+            <button type="button" value="15" id="bill-tip-3" class="btn bill-tip">15%</button>
+            <button type="button" value="25" id="bill-tip-4" class="btn bill-tip">25%</button>
+            <button type="button" value="50" id="bill-tip-5" class="btn bill-tip">50%</button>
+            <input type="text" id="bill-tip-6" class="custom-tip bill-tip clear-all" placeholder="Custom">
           </div>
         </div>
-        <div class="form-input-field">
-          <label for="number-people">Number of People</label>
+        <div class="form-input-field input-data">
+          <div class="error-container">
+            <label for="number-people" class="tip-field-name">Number of People</label>
+            <span class="error-message">Can't be zero</span>
+          </div> 
           <span class="people">
-            <img src="images/icon-person.svg" alt="people icon" class="people-icon">
+            <img src="images/icon-person.svg" alt="people icon" class="people-icon input-icon">
           </span>
-            <input type="text" id="people" class="people" name="people">
+            <input type="text" id="people" class="bill-input clear-all error-border" name="people" placeholder="0">
         </div>
       </form>
 
       <div class="tip-display-container">
         <div class="tip-per-details">
           <div class="amount">
-            <p>Tip Amount</p>
-            <p> / person</p>
+            <p class="first-child">Tip Amount</p>
+            <p class="second-child"> / person</p>
           </div>
           <div class="amount-display">
-            <h1 class="display-tip">$4.27</h1>
+            <span class="cash">$</span>
+            <h1 class="display-tip tip-amount-per-person clear-all" id="tip-amount-per-person"></h1>
           </div>
         </div>
 
         <div class="tip-per-details">
           <div class="amount">
-            <p> Total</p>
-            <p> / person</p>
+            <p class="first-child"> Total</p>
+            <p class="second-child"> / person</p>
           </div>
           <div class="amount-display">
-            <h1 class="display-tip">$4.27</h1>
+            <span class="cash">$</span>
+            <h1 class="display-tip total-tip-per-person clear-all" id="total-tip-per-person"></h1>
           </div>
         </div>
-
-        <button type="reset" class="reset-button">Reset</button>
+        <button type="button" class="reset-button" id="reset-button">Reset</button>
       </div>
     </div>
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
